@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.info p {
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  font-weight: bold;
+  color: #33415c;
+  font-style: italic;
+}
+
+.info hr {
+  border-color: grey;
+  size: 1px;
+}
+
+.switch {
+  position: relative;
+
+  width: 50px;
+  height: 25px;
+  float: right;
+  margin-top: -42px;
+  margin-right: 125px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 19px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+nav {
+  max-width: 500px;
+  height: 80px;
+  margin:auto;
+  margin-top: 20px;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: block;
+  float: left;
+  transition: 0.2s;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0;
+  text-decoration: none;
+  width: 100px;
+  line-height: 60px;
+  color: #33415c;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  border-bottom: 4px solid #564fff;
+  color: #564fff;
+  transition: 0.2s;
+}
+
+footer {
+  background-color: #212529;
+  height: 510px;
+}
+
+.footercontent{
+  text-align: center;
+  margin: auto;
+  color: white;
+  border: 1px solid #212529;
+  width: 80%;
+  height: 400px;
+}
+
+.footercontent ul{
+  list-style: none;
+  line-height: 30px;
+}
+
+.contenth1 {
+  margin-bottom: 2.5vh;
+}
+
+.infoh1{
+  margin-bottom: 3vh;
+}
+
+.footertable tr td {
+  width: 150px;
+  height: 30px;
+  font-size: 20px;
+}
+
+.footertable tr td a {
+  transition: 0.1s;
+  color: white;
+  text-decoration: none;
+}
+
+.footertable tr td a:hover {
+  color: red;
+}
+
+.footercontact, .footerinfo, .gallery {
+  width: 33.15%;
+  float: left;
+  margin-top: 100px;
+  text-align: left;
+}
+
+.footerimage img{
+  width: 100%;
+}
+
+.border {
+  margin-top: 435px;
+  border-top: 1px goldenrod solid;
+  border-radius: 1px;
+  color: #212529;
+}
+.copy {
+  clear: both;
+  color: white;
+  text-align: center;
+  font-size:14px;
+  margin-top: 10px;
+}
