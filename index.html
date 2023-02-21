@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Style/base.css">
+    <link rel="stylesheet" href="Style/index.css">
+    <title>Начало</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="info">
+        <p class="p">Операция Умножение - Разработено от Димитър Великов - XII клас</p>
+        <hr id="line">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="link">Начало</a></li>
+          <li><a href="aboutgame.html" class="link">За Играта</a></li>
+          <li><a href="download.html" class="link">Изтегли</a></li>
+          <li><a href="aboutproject.html" class="link">За Проекта</a></li>
+          <li><a href="contacts.html" class="link">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="content">
+      <div class="left">
+        <p class="one">ОПЕРАЦИЯ</p><p class="two">УМНОЖЕНИЕ</p>
+        <p class="tree">Ученето на математика сега е по-лесно и забавно от всякога! Това е една специална образователна игра, разработена от ученици за ученици. </p>
+        <a class="button" style="margin-left: 160px" href="aboutgame.html">
+          За играта
+        </a>
+        <a class="button" href="download.html">
+          Изтегли
+        </a>
+      </div>
+      <div class="right">
+        <img src="head.svg" alt="" width="700px">
+      </div>
+    </div>
+    <br>
+    <footer>
+      <div class="footercontent">
+        <div class="footercontact">
+          <h1 class="contenth1">Свържете се с нас</h1>
+          <ul>
+            <li>Telefon
+              <p>+359886776797</p>
+            </li>
+            <li>email
+              <p>todor@rachinski.com</p>
+            </li>
+            <li>Adress
+              <p>Todor Rachinski st</p>
+            </li>
+          </ul>
+        </div>
+        <div class="footerinfo">
+          <h1 class="infoh1">Информация</h1>
+            <table class="footertable">
+              <tr>
+                <td><a href="index.html">Начало</a></td>
+                <td><a href="aboutgame.html">За играта</a></td>
+              </tr>
+              <tr>
+                <td><a href="aboutproject.html">За Проекта</a></td>
+                <td><a href="contacts.html">Контакти</a></td>
+              </tr>
+            </table>
+        </div>
+        <div class="gallery">
+          <div class="footerimage"><img src="Images/mainscreen.png" alt="mainscreen"></div>
+        </div>
+        <div class="border">.</div>
+        <p class="copy">©2023 Операция Умножение е игра, създадена от Димитър В.</p>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    let white = true;
+    const themeChangerBtn = document.getElementById('btn');
+    const bodyEl = document.getElementsByTagName('body')[0];
+    const line = document.getElementById('line');
+    const link = document.getElementsByClassName('link');
+    const para = document.getElementsByClassName('p')[0];
+    themeChangerBtn.addEventListener('change', () => {
+      if (white) {
+        bodyEl.style.backgroundColor = '#22223b';
+        bodyEl.style.transition = 'all 0.4s';
+        line.style.borderColor = "lightblue";
+        para.style.color = "#E0ECFF";
+        for (i = 0; i <= 4; i++) {
+          link[i].style.color = '#E0ECFF';
+        }
+        white = false;
+      } else {
+        bodyEl.style.backgroundColor = 'white';
+        bodyEl.style.transition = 'all 0.4s';
+        line.style.borderColor = "grey";
+        para.style.color = "#33415c";
+        for (i = 0; i <= 4; i++) {
+          link[i].style.color = '#33415c';
+        }
+        white = true;
+      }
+    })
+  </script>
+</html>
