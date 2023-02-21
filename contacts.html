@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Style/contacts.css">
+    <link rel="stylesheet" href="Style/base.css">
+    <title>Контакти</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="info">
+        <p>Операция Умножение - Разработено от Димитър Великов - XII клас</p>
+        <hr id="line">
+      </div>
+      <nav>
+        <ul class="navigationlist">
+          <li><a href="index.html" class="link">Начало</a></li>
+          <li><a href="aboutgame.html" class="link">За Играта</a></li>
+          <li><a href="download.html" class="link">Изтегли</a></li>
+          <li><a href="aboutproject.html" class="link">За Проекта</a></li>
+          <li><a href="contacts.html" class="link">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+    <header>
+      <p id="para">Контакти</p>
+    </header>
+    <div class="content">
+        <div class="form">
+          <div class="something">
+            <h5>Благодаря, че се свързахте с мен</h5> <br>
+            <h6>Очаквайте отговор скоро!</h6>
+          </div>
+          <form class="contact" action="index.html" method="post">
+              <h1>Поддържайте връзка с нас:</h1>
+              <input class="forminput" placeholder="Вашето име" type="text" name="name">
+              <input class="forminput" placeholder="Вашият емайл" type="text" name="email" maxlength="300">
+              <textarea class="textinput" name="description" wrap="hard" placeholder="Вашето съобщение"></textarea>
+              <button type="button" onclick="swap()">
+                <span>Изпрати</span>
+              </button>
+          </form>
+        </div>
+        <div class="contactinfo">
+          <h1>Адрес</h1>
+          <p class="underadress">Можете да ни откриете на този адрес:</p>
+          <div class="contactlist">
+            <p class="list">Adress:</p>
+              <p class="listitem">Todor Rachinski st</p>
+            </p>
+            <p class="list">Имейл:
+              <p class="listitem">todor@rachinski.bg</p>
+           </p>
+            <p class="list">Телефон:
+              <p class="listitem">+359886776797</p>
+           </p>
+            <p class="list">Град:
+              <p class="listitem">Генерал Тошевo</p>
+           </p>
+          </div>
+        </div>
+    </div>
+    <footer>
+      <div class="footercontent">
+        <div class="footercontact">
+          <h1 class="contenth1">Свържете се с нас</h1>
+          <ul>
+            <li>Телефон: +359886776797
+            </li>
+            <li>Имейл: todor@rachinski.bg
+            </li>
+            <li>Адрес: ул. Опълченска
+          </ul>
+        </div>
+        <div class="footerinfo">
+          <h1 class="infoh1">Информация</h1>
+          <table class="footertable">
+            <tr>
+              <td><a href="index.html">Начало</a></td>
+              <td><a href="aboutgame.html">За играта</a></td>
+            </tr>
+            <tr>
+              <td><a href="aboutproject.html">За Проекта</a></td>
+              <td><a href="contacts.html">Контакти</a></td>
+            </tr>
+          </table>
+        </div>
+        <div class="gallery">
+          <div class="footerimage"><img src="Images/mainscreen.png" alt="mainscreen"></div>
+        </div>
+        <div class="border">.</div>
+        <p class="copy">©2023 Операция Умножение е игра, създадена от Димитър В.</p>
+      </div>
+    </footer>
+
+  <script>
+    let white = true;
+    const something = document.getElementsByClassName("something")[0];
+    const forma = document.getElementsByClassName("contact")[0];
+    const themeChangerBtn = document.getElementById('btn');
+    const bodyEl = document.getElementsByTagName('body')[0];
+    const line = document.getElementById('line');
+    const link = document.getElementsByClassName('link');
+    const para = document.getElementsByClassName('info')[0];
+    themeChangerBtn.addEventListener('change', () => {
+      if (white) {
+        bodyEl.style.backgroundColor = '#22223b';
+        bodyEl.style.transition = 'all 0.4s';
+        line.style.borderColor = "lightblue";
+        para.style.color = "#E0ECFF";
+        for (i = 0; i <= 4; i++) {
+          link[i].style.color = '#E0ECFF';
+        }
+        white = false;
+
+      } else {
+        bodyEl.style.backgroundColor = 'white';
+        bodyEl.style.transition = 'all 0.4s';
+        line.style.borderColor = "grey";
+        para.style.color = "#33415c";
+        for (i = 0; i <= 4; i++) {
+          link[i].style.color = '#33415c';
+        }
+        white = true;
+      }
+    })
+
+    function swap() {
+      something.style.display = "block";
+      forma.style.display = "none";
+    }
+  </script>
+</html>

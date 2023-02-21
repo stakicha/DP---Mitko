@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Style/aboutproject.css">
+    <link rel="stylesheet" href="Style/base.css">
+    <title>За Проекта</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="info">
+        <p>Операция Умножение - Разработено от Димитър Великов - XII клас</p>
+        <hr id="line">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="link">Начало</a></li>
+          <li><a href="aboutgame.html" class="link">За Играта</a></li>
+          <li><a href="download.html" class="link">Изтегли</a></li>
+          <li><a href="aboutproject.html" class="link">За Проекта</a></li>
+          <li><a href="contacts.html" class="link">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+    <header>
+      <p id="para">За Проекта</p>
+    </header>
+    <div class="container">
+      <div class="az">
+        <h1>Този проект е създаден от:</h1>
+        <div class="image"><img src="Images/az.jpg" alt="az">
+          <div class="headerimg">
+            <div class="btn_wrap">
+              <span class="projectspan">Димитър Великов</span>
+              <h3 class="azh3">Ученик от 12а кл. випуск 2022/2023</h3>
+              <a href="https://dribbble.com/YancyMin" class="dr-url" target="_blank"><img class="dr" src="https://cdn.dribbble.com/assets/logo-footer-hd-a05db77841b4b27c0bf23ec1378e97c988190dfe7d26e32e1faea7269f9e001b.png" alt=""></a>
+          </div>
+          </div>
+          <p class="projectp">Софтуерен инжeнер, способен на работа с Python OOP, Django Web, HTML & CSS, etc. Участвал в състезания по програмиране и гейм дизайн.</p>
+        </div>
+      </div>
+      <div class="staka">
+        <h1>Със съдействието на:</h1>
+        <div class="image">
+          <img src="Images/staka.jpg" alt="staka">
+          <div class="headerimg">
+            <div class="btn_wrap">
+              <span class="projectspan">Г-н Стаката Георгиев</span>
+              <h3 class="stakah3">Учител в ПГЗ "Т.Рачински"</h3>
+          </div>
+          </div>
+          <p class="projectp">Бездомен ООП разработчик, търсещ си работа и нова жена със скъпа кола. Fullstack. Jack of all trades and a master of none. Competitive pro gramer for life.</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footercontent">
+        <div class="footercontact">
+          <h1 class="contenth1">Свържете се с нас</h1>
+          <ul>
+            <li>Telefon
+              <p>+359886776797</p>
+            </li>
+            <li>email
+              <p>todor@rachinski.com</p>
+            </li>
+            <li>Adress
+              <p>Todor Rachinski st</p>
+            </li>
+          </ul>
+        </div>
+        <div class="footerinfo">
+          <h1 class="infoh1">Информация</h1>
+          <table class="footertable">
+            <tr>
+              <td><a href="index.html">Начало</a></td>
+              <td><a href="aboutgame.html">За играта</a></td>
+            </tr>
+            <tr>
+              <td><a href="aboutproject.html">За Проекта</a></td>
+              <td><a href="contacts.html">Контакти</a></td>
+            </tr>
+          </table>
+        </div>
+        <div class="gallery">
+          <div>
+            <div class="footerimage"><img src="Images/mainscreen.png" alt="bear"></div>
+         </div>
+        </div>
+        <div class="border">.</div>
+        <p class="copy">©2023 Операция Умножение е игра, създадена от Димитър В.</p>
+      </div>
+    </footer>
+
+  <script>
+    let white = true;
+    const themeChangerBtn = document.getElementById('btn');
+    const bodyEl = document.getElementsByTagName('body')[0];
+    const line = document.getElementById('line');
+    const link = document.getElementsByClassName('link');
+    const para = document.getElementsByClassName('info')[0];
+    themeChangerBtn.addEventListener('change', () => {
+      if (white) {
+        bodyEl.style.backgroundColor = '#22223b';
+        bodyEl.style.transition = 'all 0.4s';
+        line.style.borderColor = "lightblue";
+        para.style.color = "#E0ECFF";
+        for (i = 0; i <= 4; i++) {
+          link[i].style.color = '#E0ECFF';
+        }
+        white = false;
+
+      } else {
+        bodyEl.style.backgroundColor = 'white';
+        bodyEl.style.transition = 'all 0.4s';
+        line.style.borderColor = "grey";
+        para.style.color = "#33415c";
+        for (i = 0; i <= 4; i++) {
+          link[i].style.color = '#33415c';
+        }
+        white = true;
+      }
+    })
+  </script>
+</html>

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Style/aboutgame.css">
+    <link rel="stylesheet" href="Style/base.css">
+    <title>За Играта</title>
+  </head>
+  <body>
+    <div class="maindiv"><div class="navbar">
+      <div class="info">
+        <p>Операция Умножение - Разработено от Димитър Великов - XII клас</p>
+        <hr id="line">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="link">Начало</a></li>
+          <li><a href="aboutgame.html" class="link">За Играта</a></li>
+          <li><a href="download.html" class="link">Изтегли</a></li>
+          <li><a href="aboutproject.html" class="link">За Проекта</a></li>
+          <li><a href="contacts.html" class="link">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+    <header>
+      <p id="para">За играта</p>
+    </header>
+    <div class="content">
+      <div class="game">
+        <div class="imgbox">
+          <img src="images/game.png" alt="game">
+          <button type="button">
+            <span>Изтегли играта от ТУК!</span>
+          </button>
+        </div>
+      </div>
+      <div class="gameinfo">
+        <p class="p1">Добре дошли в</p>
+        <p class="p2">"ОПЕРАЦИЯ <br>
+           УМНОЖЕНИЕ"</p>
+        <p class="p3">Играта е разработена с цел да бъде едновременно забавна и полезна. Използваните графики са специално подбрани да бъдат забавни и подходящи за деца на 8-годишна възраст. <br>
+          Главната цел на играта е учениците да упражнят уменията си по математика, свързани с умножението. За да победят, те ще трябва да отговорят правилно на 10 задачи за умножение. <br>
+          Играта е ролева, като играчите ще имат възможност да се разхождат из виртуалното училище, което сме създали. Те ще могат да говорят с учители и да четат книги, които имат за цел да предадат нови знания на играчите.
+          </p>
+        <p class="p4">В играта и сайтът са имплементирани следните езици и приложения:</p>
+        <table class="contenttable">
+          <tr>
+            <td>Езикът за <span class="tablespan">структуриране</span> на сайта е HTML 5.</td>
+            <td>Езикът за <span class="tablespan">стилизиране</span> на елементите в сайта е CSS 3.</td>
+          </tr>
+          <tr>
+            <td>Езикът, който прави сайтът <span class="tablespan">интерактивен</span>, е JavaScript.</td>
+            <td><span class="tablespan">Играта</span> е направена с GameMaker Studio.</td>
+          </tr>
+        </table>
+        <p class="p5">Имате въпрос? <a href="contacts.html">Свържете се с нас!</a></p>
+      </div>
+    </div>
+  </div>
+    <footer>
+      <div class="footercontent">
+        <div class="footercontact">
+          <h1 class="contenth1">Свържете се с нас</h1>
+          <ul>
+            <li>Telefon
+              <p>+359886776797</p>
+            </li>
+            <li>email
+              <p>todor@rachinski.com</p>
+            </li>
+            <li>Adress
+              <p>Todor Rachinski st</p>
+            </li>
+          </ul>
+        </div>
+        <div class="footerinfo">
+          <h1 class="infoh1">Информация</h1>
+          <table class="footertable">
+            <tr>
+              <td><a href="index.html">Начало</a></td>
+              <td><a href="aboutgame.html">За играта</a></td>
+            </tr>
+            <tr>
+              <td><a href="aboutproject.html">За Проекта</a></td>
+              <td><a href="contacts.html">Контакти</a></td>
+            </tr>
+          </table>
+        </div>
+        <div class="gallery">
+          <div class="footerimage"><img src="Images/mainscreen.png" alt="mainscreen"></div>
+        </div>
+        <div class="border">.</div>
+        <p class="copy">©2023 Операция Умножение е игра, създадена от Димитър В.</p>
+      </div>
+    </footer>
+
+  </body>
+
+  <script>
+    let white = true;
+    const themeChangerBtn = document.getElementById('btn');
+    const bodyEl = document.getElementsByTagName('body')[0];
+    const line = document.getElementById('line');
+    const link = document.getElementsByClassName('link');
+    const para = document.getElementsByClassName('info')[0];
+    themeChangerBtn.addEventListener('change', () => {
+      if (white) {
+        bodyEl.style.backgroundColor = '#22223b';
+        bodyEl.style.transition = 'all 0.4s';
+        line.style.borderColor = "lightblue";
+        para.style.color = "#E0ECFF";
+        for (i = 0; i <= 4; i++) {
+          link[i].style.color = '#E0ECFF';
+        }
+        white = false;
+
+      } else {
+        bodyEl.style.backgroundColor = 'white';
+        bodyEl.style.transition = 'all 0.4s';
+        line.style.borderColor = "grey";
+        para.style.color = "#33415c";
+        for (i = 0; i <= 4; i++) {
+          link[i].style.color = '#33415c';
+        }
+        white = true;
+      }
+    })
+
+      $.fn.boom = function(e) {
+    var colors = [
+      '#ffb3f6',
+      '#7aa0ff',
+      '#333',
+      // '#FFD100',
+      // '#FF9300',
+      // '#FF7FA4'
+    ];
+    var shapes = [
+      '<polygon class="star" points="21,0,28.053423027509677,11.29179606750063,40.97218684219823,14.510643118126104,32.412678195541844,24.70820393249937,33.34349029814194,37.989356881873896,21,33,8.656509701858067,37.989356881873896,9.587321804458158,24.70820393249937,1.0278131578017735,14.510643118126108,13.94657697249032,11.291796067500632"></polygon>', 
+      // '<path class="circle" d="m 20 1 a 1 1 0 0 0 0 25 a 1 1 0 0 0 0 -25"></path>',
+      '<polygon class="other-star" points="18,0,22.242640687119284,13.757359312880714,36,18,22.242640687119284,22.242640687119284,18.000000000000004,36,13.757359312880716,22.242640687119284,0,18.000000000000004,13.757359312880714,13.757359312880716"></polygon>',
+      '<polygon class="diamond" points="18,0,27.192388155425117,8.80761184457488,36,18,27.19238815542512,27.192388155425117,18.000000000000004,36,8.807611844574883,27.19238815542512,0,18.000000000000004,8.80761184457488,8.807611844574884"></polygon>'
+    ];
+
+    var btn = $(this);
+    var group = [];
+    var num = Math.floor(Math.random() * 50) + 30;
+
+    for(i = 0; i < num; i++) {
+      var randBG = Math.floor(Math.random() * colors.length);
+      var getShape = Math.floor(Math.random() * shapes.length);
+      var c = Math.floor(Math.random() * 10) + 5;
+      var scale = Math.floor(Math.random() * (8 - 4 + 1)) + 4;
+      var x = Math.floor(Math.random() * (150 + 100)) - 100;
+      var y = Math.floor(Math.random() * (150 + 100)) - 100;
+      var sec = Math.floor(Math.random() * 1700) + 1000;
+      var cir = $('<div class="cir"></div>');
+      var shape = $('<svg class="shape">'+shapes[getShape]+'</svg>');
+      
+      shape.css({
+        top: e.pageY - btn.offset().top + 20,
+        left: e.pageX - btn.offset().left + 40,
+        'transform': 'scale(0.'+scale+')',
+        'transition': sec + 'ms',
+        'fill': colors[randBG]
+      });
+
+      btn.siblings('.btn-particles').append(shape);
+
+      group.push({shape: shape, x: x, y: y});
+    }
+    
+    for (var a = 0; a < group.length; a++) {
+      var shape = group[a].shape;
+      var x = group[a].x, y = group[a].y;
+      shape.css({
+        left: x + 50,
+        top: y + 15,
+        'transform': 'scale(0)'
+      });
+    }
+    
+    setTimeout(function() {
+      for (var b = 0; b < group.length; b++) {
+        var shape = group[b].shape;
+        shape.remove();
+      }
+      group = [];
+    }, 2000);
+
+  }	
+
+  $(function() {
+    $(document).on('click', '.btn', function(e) {
+      $(this).boom(e);
+    });
+
+  });
+
+// -----------
+// Definitions
+// -----------
+
+var canvas = document.querySelector('canvas');
+    canvas.width = 840;
+    canvas.height = 840;
+var context = canvas.getContext('2d');
+var currentFrame = 0;
+var circles = [];
+var circleCount = 10;
+
+
+
+// ---------
+// LIFECYCLE
+// ---------
+
+function update() {
+
+  // ------------
+  // Update state
+  // ------------
+
+  currentFrame++;
+
+  _projection.refZ = 400;
+  _projection.fLength = 102;
+
+  for(var i = 0; i < circles.length; i++) {
+    _projection.doProjection(circles[i].shape);
+    _projection.rotateY(circles[i].shape, circles[i].rotationX);
+    _projection.rotateX(circles[i].shape, circles[i].rotationY);
+  }
+
+
+
+  // ------
+  // Render
+  // ------
+
+  render();
+}
+
+
+
+
+// ------
+// Render
+// ------
+
+function render() {
+
+  // -----
+  // Clear
+  // -----
+
+  context.clearRect(0, 0, canvas.width, canvas.height);
+
+
+
+  // -----------------
+  // Background circle
+  // -----------------
+
+  context.beginPath();
+  context.fillStyle = 'rgba(255,255,255, 1)';
+  context.lineWidth = 5;
+  context.arc(
+    canvas.width/2,
+    canvas.height/2,
+    260,
+    0,
+    Math.PI * 2,
+    false
+  );
+  context.fill();
+
+
+
+  // ----------------
+  // Particle circles
+  // ----------------
+
+  for(var i = 0; i < circles.length; i++) {
+    circles[i].render();
+  }
+
+
+
+  // ----
+  // Loop
+  // ----
+
+  requestAnimationFrame(update);
+
+}
+
+
+
+// ---------------
+// Start Animation
+// ---------------
+
+requestAnimationFrame(update);
+
+
+
+// -------------
+// 3D Projection
+// -------------
+
+var Basic3DProjection = function() {
+
+  this.projCenterX = 0;
+  this.projCenterY = 0;
+  this.fLength = 400;
+  this.refZ = 400;
+
+  this.getScaleFromZ = function(z) {
+    if (this.fLength +z == 0) {
+      return 0.001;
+    } else {
+      return this.refZ/(this.fLength+z);
+    }
+  }
+
+  this.doProjection = function(_object) {
+
+    var x = _object.posX*this.getScaleFromZ(_object.posZ)+this.projCenterX;
+    var y = _object.posY*this.getScaleFromZ(_object.posZ)+this.projCenterY;
+    var y0z0  = this.getScaleFromZ(0);
+
+    _object.screenX = x;
+    _object.screenY = y-y0z0;
+    _object.scale = this.getScaleFromZ(_object.posZ);
+    _object.pastViewPoint = _object.posZ > this.refZ;
+
+  }
+
+  this.rotateY = function(object, ang) {
+    var _cos = Math.cos(ang);
+    var _sin = Math.sin(ang);
+
+    var tz = object.posZ * _cos - object.posX * _sin;
+    var tx = object.posZ * _sin + object.posX * _cos;
+    object.posX = tx;
+    object.posZ = tz;
+    this.doProjection(object);
+  }
+
+  this.rotateX = function(object, ang) {
+    var _cos = Math.cos(ang);
+    var _sin = Math.sin(ang);
+
+    var ty = object.posY * _cos - object.posZ * _sin;
+    var tz = object.posY * _sin + object.posZ * _cos;
+    object.posY = ty;
+    object.posZ = tz;
+    this.doProjection(object);
+  }
+
+  this.rotateZ = function(object, ang) {
+    var _cos = Math.cos(ang);
+    var _sin = Math.sin(ang);
+
+    var object = objects[i];
+    var tx = object.posX * _cos - object.posY * _sin;
+    var ty = object.posX * _sin + object.posY * _cos;
+    object.posX = tx;
+    object.posY = ty;
+    this.doProjection(object);
+  }
+
+}
+
+var _projection = new Basic3DProjection();
+    _projection.projCenterX = canvas.width/2;
+    _projection.projCenterY = canvas.height/2;
+
+
+
+// --------
+// 3D Shape
+// --------
+
+var Basic3DObject = function (x, y, z, size) {
+
+  this.posX = x;
+  this.posY = y;
+  this.posZ = z;
+  this.dispSize = size;
+
+  this.screenX = 0;
+  this.screenY = 0;
+
+  this.scale = 1;
+  this.pastViewPoint = false;
+
+}
+
+
+function createCircle() {
+  this.shape = new Basic3DObject(0, 0, 68, 0);
+  this.rotationX;
+  this.rotationY;
+  this.size;
+
+  this.render = function() {
+    context.beginPath();
+    context.strokeStyle = 'rgba(182,182,182, ' + (this.shape.posZ * -1) / 60 + ')';
+    context.fillStyle = 'rgba(182,182,182, ' + (this.shape.posZ * -1) / 60 + ')';
+    context.lineWidth = 2 * this.size;
+    context.arc(
+      this.shape.screenX,
+      this.shape.screenY,
+      this.size * this.shape.scale,
+      0,
+      Math.PI * 2,
+      false
+    );
+    if(this.fillOrStroke === 'fill') {
+      context.fill();
+    } else {
+      context.stroke();
+    }
+  }
+}
+
+for(var i = 0; i < circleCount; i++) {
+  var tempCircle = new createCircle();
+
+  if(Math.random() < 0.5) {
+    tempCircle.rotationX = Math.random() / 100;
+  } else {
+    tempCircle.rotationX = (Math.random() / 100) * -1;
+  }
+
+  if(Math.random() < 0.5) {
+    tempCircle.fillOrStroke = 'fill';
+  } else {
+    tempCircle.fillOrStroke = 'stroke';
+  }
+
+  if(Math.random() < 0.5) {
+    tempCircle.rotationY = Math.random() / 100;
+  } else {
+    tempCircle.rotationY = Math.random() / 100 * -1;
+  }
+
+  tempCircle.size = Math.random() * 2;
+
+  circles.push(tempCircle);
+}
+
+  </script>
+</html>
